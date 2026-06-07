@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01796.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "flamingo",
+      "bbox": [
+        0.0421875,
+        0.6020833333333333,
+        0.1796875,
+        0.23958333333333334
+      ]
+    },
+    {
+      "class": "bee",
+      "bbox": [
+        0.1453125,
+        0.275,
+        0.2203125,
+        0.29375
+      ]
+    }
+  ]
+}

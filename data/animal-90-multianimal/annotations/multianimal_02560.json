@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02560.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "jellyfish",
+      "bbox": [
+        0.5625,
+        0.425,
+        0.3390625,
+        0.45208333333333334
+      ]
+    },
+    {
+      "class": "flamingo",
+      "bbox": [
+        0.4078125,
+        0.03125,
+        0.34375,
+        0.4583333333333333
+      ]
+    }
+  ]
+}

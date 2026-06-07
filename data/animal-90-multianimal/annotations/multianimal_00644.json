@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00644.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.375,
+        0.3729166666666667,
+        0.1296875,
+        0.17291666666666666
+      ]
+    },
+    {
+      "class": "sparrow",
+      "bbox": [
+        0.4078125,
+        0.08125,
+        0.221875,
+        0.29583333333333334
+      ]
+    }
+  ]
+}

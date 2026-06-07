@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02543.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hyena",
+      "bbox": [
+        0.5484375,
+        0.32916666666666666,
+        0.296875,
+        0.3958333333333333
+      ]
+    },
+    {
+      "class": "okapi",
+      "bbox": [
+        0.334375,
+        0.28125,
+        0.3328125,
+        0.44375
+      ]
+    }
+  ]
+}

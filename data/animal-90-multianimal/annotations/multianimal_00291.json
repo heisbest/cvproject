@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00291.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "goldfish",
+      "bbox": [
+        0.3140625,
+        0.475,
+        0.2875,
+        0.38333333333333336
+      ]
+    },
+    {
+      "class": "penguin",
+      "bbox": [
+        0.1765625,
+        0.46041666666666664,
+        0.2359375,
+        0.3145833333333333
+      ]
+    }
+  ]
+}

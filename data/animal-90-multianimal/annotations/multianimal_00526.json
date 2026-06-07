@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00526.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "cockroach",
+      "bbox": [
+        0.171875,
+        0.6291666666666667,
+        0.2578125,
+        0.34375
+      ]
+    },
+    {
+      "class": "sparrow",
+      "bbox": [
+        0.3375,
+        0.07916666666666666,
+        0.2875,
+        0.38333333333333336
+      ]
+    }
+  ]
+}

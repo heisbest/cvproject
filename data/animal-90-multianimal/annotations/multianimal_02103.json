@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02103.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "okapi",
+      "bbox": [
+        0.440625,
+        0.15,
+        0.1875,
+        0.25
+      ]
+    },
+    {
+      "class": "leopard",
+      "bbox": [
+        0.578125,
+        0.7375,
+        0.1375,
+        0.18333333333333332
+      ]
+    }
+  ]
+}

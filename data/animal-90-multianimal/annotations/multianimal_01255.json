@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01255.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "goat",
+      "bbox": [
+        0.3015625,
+        0.50625,
+        0.328125,
+        0.4375
+      ]
+    },
+    {
+      "class": "donkey",
+      "bbox": [
+        0.4390625,
+        0.4125,
+        0.3046875,
+        0.40625
+      ]
+    }
+  ]
+}

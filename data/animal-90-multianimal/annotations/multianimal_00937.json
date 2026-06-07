@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00937.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "antelope",
+      "bbox": [
+        0.46875,
+        0.1125,
+        0.30625,
+        0.4083333333333333
+      ]
+    },
+    {
+      "class": "crow",
+      "bbox": [
+        0.203125,
+        0.6354166666666666,
+        0.1453125,
+        0.19375
+      ]
+    }
+  ]
+}

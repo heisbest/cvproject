@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02028.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "grasshopper",
+      "bbox": [
+        0.1875,
+        0.30833333333333335,
+        0.3234375,
+        0.43125
+      ]
+    },
+    {
+      "class": "shark",
+      "bbox": [
+        0.009375,
+        0.13333333333333333,
+        0.334375,
+        0.44583333333333336
+      ]
+    }
+  ]
+}

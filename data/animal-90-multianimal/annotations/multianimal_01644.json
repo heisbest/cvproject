@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01644.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.409375,
+        0.18541666666666667,
+        0.309375,
+        0.4125
+      ]
+    },
+    {
+      "class": "hummingbird",
+      "bbox": [
+        0.534375,
+        0.44166666666666665,
+        0.3375,
+        0.45
+      ]
+    },
+    {
+      "class": "grasshopper",
+      "bbox": [
+        0.471875,
+        0.28125,
+        0.228125,
+        0.30416666666666664
+      ]
+    }
+  ]
+}

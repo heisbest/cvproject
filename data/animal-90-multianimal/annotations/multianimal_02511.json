@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02511.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "flamingo",
+      "bbox": [
+        0.45,
+        0.6104166666666667,
+        0.203125,
+        0.2708333333333333
+      ]
+    },
+    {
+      "class": "okapi",
+      "bbox": [
+        0.6625,
+        0.5625,
+        0.2953125,
+        0.39375
+      ]
+    }
+  ]
+}

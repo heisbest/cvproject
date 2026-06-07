@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02381.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "kangaroo",
+      "bbox": [
+        0.04375,
+        0.15833333333333333,
+        0.14375,
+        0.19166666666666668
+      ]
+    },
+    {
+      "class": "horse",
+      "bbox": [
+        0.4203125,
+        0.4,
+        0.3328125,
+        0.44375
+      ]
+    }
+  ]
+}

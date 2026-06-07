@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02484.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "butterfly",
+      "bbox": [
+        0.7984375,
+        0.052083333333333336,
+        0.1875,
+        0.25
+      ]
+    },
+    {
+      "class": "sandpiper",
+      "bbox": [
+        0.41875,
+        0.42083333333333334,
+        0.203125,
+        0.2708333333333333
+      ]
+    }
+  ]
+}

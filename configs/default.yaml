@@ -1,0 +1,21 @@
+# Data paths
+animal90: ./data/animal-90
+multianimal: ./data/animal-90-multianimal
+occlusion: ./data/animal-90-occlusion
+output_dir: ./checkpoints
+
+# Training
+batch_size: 32
+loc_epochs: 20
+cls_epochs: 25
+loc_lr: 0.001
+cls_lr: 0.001
+
+# Dataset generation
+samples_per_class: 30
+canvas_width: 640
+canvas_height: 480
+
+# Inference
+use_locateanything: true
+locateanything_model: nvidia/LocateAnything-3B

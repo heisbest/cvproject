@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00604.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "dolphin",
+      "bbox": [
+        0.6234375,
+        0.425,
+        0.2375,
+        0.31666666666666665
+      ]
+    },
+    {
+      "class": "grasshopper",
+      "bbox": [
+        0.5484375,
+        0.32708333333333334,
+        0.2171875,
+        0.28958333333333336
+      ]
+    }
+  ]
+}

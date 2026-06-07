@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02244.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "duck",
+      "bbox": [
+        0.1828125,
+        0.1,
+        0.275,
+        0.36666666666666664
+      ]
+    },
+    {
+      "class": "oyster",
+      "bbox": [
+        0.309375,
+        0.4375,
+        0.278125,
+        0.37083333333333335
+      ]
+    }
+  ]
+}

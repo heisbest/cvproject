@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00221.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "seal",
+      "bbox": [
+        0.378125,
+        0.3875,
+        0.2625,
+        0.35
+      ]
+    },
+    {
+      "class": "sheep",
+      "bbox": [
+        0.3546875,
+        0.0020833333333333333,
+        0.1421875,
+        0.18958333333333333
+      ]
+    }
+  ]
+}

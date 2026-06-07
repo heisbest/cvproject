@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01626.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "swan",
+      "bbox": [
+        0.35,
+        0.4666666666666667,
+        0.1953125,
+        0.2604166666666667
+      ]
+    },
+    {
+      "class": "mosquito",
+      "bbox": [
+        0.4203125,
+        0.425,
+        0.3015625,
+        0.40208333333333335
+      ]
+    }
+  ]
+}

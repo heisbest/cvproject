@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02104.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hornbill",
+      "bbox": [
+        0.5421875,
+        0.24583333333333332,
+        0.2265625,
+        0.3020833333333333
+      ]
+    },
+    {
+      "class": "orangutan",
+      "bbox": [
+        0.2203125,
+        0.035416666666666666,
+        0.3,
+        0.4
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00382.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "leopard",
+      "bbox": [
+        0.346875,
+        0.7625,
+        0.121875,
+        0.1625
+      ]
+    },
+    {
+      "class": "bison",
+      "bbox": [
+        0.00625,
+        0.7729166666666667,
+        0.159375,
+        0.2125
+      ]
+    }
+  ]
+}

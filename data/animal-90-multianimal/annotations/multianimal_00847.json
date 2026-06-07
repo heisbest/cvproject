@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00847.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hamster",
+      "bbox": [
+        0.271875,
+        0.3229166666666667,
+        0.346875,
+        0.4625
+      ]
+    },
+    {
+      "class": "hedgehog",
+      "bbox": [
+        0.4921875,
+        0.5,
+        0.19375,
+        0.25833333333333336
+      ]
+    }
+  ]
+}

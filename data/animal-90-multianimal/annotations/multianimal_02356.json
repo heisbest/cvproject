@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_02356.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hedgehog",
+      "bbox": [
+        0.7421875,
+        0.53125,
+        0.253125,
+        0.3375
+      ]
+    },
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.246875,
+        0.5208333333333334,
+        0.253125,
+        0.3375
+      ]
+    },
+    {
+      "class": "coyote",
+      "bbox": [
+        0.5046875,
+        0.6,
+        0.246875,
+        0.32916666666666666
+      ]
+    }
+  ]
+}

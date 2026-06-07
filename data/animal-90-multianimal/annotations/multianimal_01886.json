@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01886.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "octopus",
+      "bbox": [
+        0.084375,
+        0.03125,
+        0.2390625,
+        0.31875
+      ]
+    },
+    {
+      "class": "rhinoceros",
+      "bbox": [
+        0.565625,
+        0.49583333333333335,
+        0.1875,
+        0.25
+      ]
+    }
+  ]
+}

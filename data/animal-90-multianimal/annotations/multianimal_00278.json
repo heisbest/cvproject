@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00278.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "caterpillar",
+      "bbox": [
+        0.196875,
+        0.035416666666666666,
+        0.34375,
+        0.4583333333333333
+      ]
+    },
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.415625,
+        0.22083333333333333,
+        0.296875,
+        0.3958333333333333
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00001.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "penguin",
+      "bbox": [
+        0.08125,
+        0.09791666666666667,
+        0.2953125,
+        0.39375
+      ]
+    },
+    {
+      "class": "goose",
+      "bbox": [
+        0.4828125,
+        0.28125,
+        0.3140625,
+        0.41875
+      ]
+    }
+  ]
+}

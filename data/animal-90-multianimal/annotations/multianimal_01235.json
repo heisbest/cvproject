@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01235.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "wolf",
+      "bbox": [
+        0.2484375,
+        0.40625,
+        0.2921875,
+        0.38958333333333334
+      ]
+    },
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.5234375,
+        0.1875,
+        0.3203125,
+        0.4270833333333333
+      ]
+    }
+  ]
+}

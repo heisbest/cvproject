@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01942.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "koala",
+      "bbox": [
+        0.6265625,
+        0.31875,
+        0.1953125,
+        0.2604166666666667
+      ]
+    },
+    {
+      "class": "lizard",
+      "bbox": [
+        0.3796875,
+        0.5,
+        0.321875,
+        0.42916666666666664
+      ]
+    }
+  ]
+}

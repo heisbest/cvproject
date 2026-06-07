@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01662.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "octopus",
+      "bbox": [
+        0.1859375,
+        0.5770833333333333,
+        0.16875,
+        0.225
+      ]
+    },
+    {
+      "class": "pig",
+      "bbox": [
+        0.684375,
+        0.3625,
+        0.2078125,
+        0.27708333333333335
+      ]
+    }
+  ]
+}

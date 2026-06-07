@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00469.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "tiger",
+      "bbox": [
+        0.190625,
+        0.5125,
+        0.2625,
+        0.35
+      ]
+    },
+    {
+      "class": "ox",
+      "bbox": [
+        0.6453125,
+        0.4,
+        0.30625,
+        0.4083333333333333
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00853.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "bear",
+      "bbox": [
+        0.4421875,
+        0.3020833333333333,
+        0.196875,
+        0.2625
+      ]
+    },
+    {
+      "class": "panda",
+      "bbox": [
+        0.4265625,
+        0.5875,
+        0.1703125,
+        0.22708333333333333
+      ]
+    }
+  ]
+}

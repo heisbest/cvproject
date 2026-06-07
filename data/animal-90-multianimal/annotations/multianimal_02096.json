@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02096.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "shark",
+      "bbox": [
+        0.08125,
+        0.29583333333333334,
+        0.1265625,
+        0.16875
+      ]
+    },
+    {
+      "class": "rhinoceros",
+      "bbox": [
+        0.528125,
+        0.51875,
+        0.2875,
+        0.38333333333333336
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01317.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "goldfish",
+      "bbox": [
+        0.2671875,
+        0.55625,
+        0.2671875,
+        0.35625
+      ]
+    },
+    {
+      "class": "okapi",
+      "bbox": [
+        0.0046875,
+        0.08541666666666667,
+        0.23125,
+        0.30833333333333335
+      ]
+    }
+  ]
+}

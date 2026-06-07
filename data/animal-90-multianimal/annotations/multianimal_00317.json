@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00317.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "shark",
+      "bbox": [
+        0.378125,
+        0.0375,
+        0.2734375,
+        0.3645833333333333
+      ]
+    },
+    {
+      "class": "deer",
+      "bbox": [
+        0.7359375,
+        0.5708333333333333,
+        0.1546875,
+        0.20625
+      ]
+    }
+  ]
+}

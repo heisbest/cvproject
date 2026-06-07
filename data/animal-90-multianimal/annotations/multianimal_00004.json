@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00004.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "parrot",
+      "bbox": [
+        0.1359375,
+        0.56875,
+        0.259375,
+        0.3458333333333333
+      ]
+    },
+    {
+      "class": "pig",
+      "bbox": [
+        0.215625,
+        0.68125,
+        0.225,
+        0.3
+      ]
+    }
+  ]
+}

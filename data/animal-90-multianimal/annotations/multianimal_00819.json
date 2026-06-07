@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00819.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "oyster",
+      "bbox": [
+        0.3828125,
+        0.04375,
+        0.2796875,
+        0.3729166666666667
+      ]
+    },
+    {
+      "class": "moth",
+      "bbox": [
+        0.24375,
+        0.14583333333333334,
+        0.1734375,
+        0.23125
+      ]
+    }
+  ]
+}

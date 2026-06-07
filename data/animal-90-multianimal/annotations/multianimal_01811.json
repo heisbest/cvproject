@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01811.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "seal",
+      "bbox": [
+        0.2671875,
+        0.22291666666666668,
+        0.140625,
+        0.1875
+      ]
+    },
+    {
+      "class": "lobster",
+      "bbox": [
+        0.690625,
+        0.40625,
+        0.1234375,
+        0.16458333333333333
+      ]
+    }
+  ]
+}

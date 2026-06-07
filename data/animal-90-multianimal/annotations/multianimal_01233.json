@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01233.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "moth",
+      "bbox": [
+        0.2796875,
+        0.2125,
+        0.140625,
+        0.1875
+      ]
+    },
+    {
+      "class": "lizard",
+      "bbox": [
+        0.5015625,
+        0.45416666666666666,
+        0.2875,
+        0.38333333333333336
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02287.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hedgehog",
+      "bbox": [
+        0.6421875,
+        0.4583333333333333,
+        0.334375,
+        0.44583333333333336
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.225,
+        0.13541666666666666,
+        0.1546875,
+        0.20625
+      ]
+    }
+  ]
+}

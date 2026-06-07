@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01536.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "oyster",
+      "bbox": [
+        0.0734375,
+        0.7229166666666667,
+        0.1875,
+        0.25
+      ]
+    },
+    {
+      "class": "beetle",
+      "bbox": [
+        0.1890625,
+        0.1125,
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "class": "hamster",
+      "bbox": [
+        0.6125,
+        0.39375,
+        0.228125,
+        0.30416666666666664
+      ]
+    }
+  ]
+}

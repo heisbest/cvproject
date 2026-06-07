@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00520.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "turkey",
+      "bbox": [
+        0.8234375,
+        0.6916666666666667,
+        0.13125,
+        0.175
+      ]
+    },
+    {
+      "class": "butterfly",
+      "bbox": [
+        0.5015625,
+        0.42916666666666664,
+        0.3421875,
+        0.45625
+      ]
+    }
+  ]
+}

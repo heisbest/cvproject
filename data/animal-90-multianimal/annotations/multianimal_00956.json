@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00956.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "turtle",
+      "bbox": [
+        0.1609375,
+        0.36666666666666664,
+        0.3328125,
+        0.44375
+      ]
+    },
+    {
+      "class": "whale",
+      "bbox": [
+        0.1265625,
+        0.49375,
+        0.14375,
+        0.19166666666666668
+      ]
+    }
+  ]
+}

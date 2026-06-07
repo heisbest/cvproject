@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01180.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "turkey",
+      "bbox": [
+        0.50625,
+        0.49375,
+        0.2671875,
+        0.35625
+      ]
+    },
+    {
+      "class": "rhinoceros",
+      "bbox": [
+        0.428125,
+        0.58125,
+        0.296875,
+        0.3958333333333333
+      ]
+    }
+  ]
+}

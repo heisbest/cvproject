@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01319.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "turtle",
+      "bbox": [
+        0.2921875,
+        0.5875,
+        0.1765625,
+        0.23541666666666666
+      ]
+    },
+    {
+      "class": "coyote",
+      "bbox": [
+        0.6578125,
+        0.0625,
+        0.2234375,
+        0.29791666666666666
+      ]
+    }
+  ]
+}

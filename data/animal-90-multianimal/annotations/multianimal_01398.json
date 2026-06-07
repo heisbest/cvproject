@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01398.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hippopotamus",
+      "bbox": [
+        0.6546875,
+        0.56875,
+        0.2921875,
+        0.38958333333333334
+      ]
+    },
+    {
+      "class": "zebra",
+      "bbox": [
+        0.7,
+        0.4791666666666667,
+        0.128125,
+        0.17083333333333334
+      ]
+    }
+  ]
+}

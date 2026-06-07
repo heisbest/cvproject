@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01326.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "dolphin",
+      "bbox": [
+        0.44375,
+        0.49375,
+        0.3421875,
+        0.45625
+      ]
+    },
+    {
+      "class": "raccoon",
+      "bbox": [
+        0.296875,
+        0.4625,
+        0.259375,
+        0.3458333333333333
+      ]
+    }
+  ]
+}

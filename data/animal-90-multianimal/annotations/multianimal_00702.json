@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_00702.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "porcupine",
+      "bbox": [
+        0.23125,
+        0.675,
+        0.140625,
+        0.1875
+      ]
+    },
+    {
+      "class": "lizard",
+      "bbox": [
+        0.7328125,
+        0.7333333333333333,
+        0.1828125,
+        0.24375
+      ]
+    },
+    {
+      "class": "hedgehog",
+      "bbox": [
+        0.6671875,
+        0.5583333333333333,
+        0.309375,
+        0.4125
+      ]
+    }
+  ]
+}

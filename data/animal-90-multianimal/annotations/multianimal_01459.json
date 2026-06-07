@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01459.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "elephant",
+      "bbox": [
+        0.1765625,
+        0.15208333333333332,
+        0.2953125,
+        0.39375
+      ]
+    },
+    {
+      "class": "hamster",
+      "bbox": [
+        0.2328125,
+        0.38125,
+        0.275,
+        0.36666666666666664
+      ]
+    }
+  ]
+}

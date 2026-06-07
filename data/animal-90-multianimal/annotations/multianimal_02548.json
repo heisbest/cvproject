@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02548.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.23125,
+        0.10208333333333333,
+        0.1765625,
+        0.23541666666666666
+      ]
+    },
+    {
+      "class": "pigeon",
+      "bbox": [
+        0.771875,
+        0.6125,
+        0.2,
+        0.26666666666666666
+      ]
+    }
+  ]
+}

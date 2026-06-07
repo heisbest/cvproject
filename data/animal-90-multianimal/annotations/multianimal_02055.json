@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02055.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "possum",
+      "bbox": [
+        0.4421875,
+        0.022916666666666665,
+        0.121875,
+        0.1625
+      ]
+    },
+    {
+      "class": "hyena",
+      "bbox": [
+        0.1078125,
+        0.13125,
+        0.190625,
+        0.25416666666666665
+      ]
+    }
+  ]
+}

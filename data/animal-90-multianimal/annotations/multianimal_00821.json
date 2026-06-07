@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00821.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "cow",
+      "bbox": [
+        0.5984375,
+        0.54375,
+        0.184375,
+        0.24583333333333332
+      ]
+    },
+    {
+      "class": "antelope",
+      "bbox": [
+        0.409375,
+        0.35625,
+        0.165625,
+        0.22083333333333333
+      ]
+    }
+  ]
+}

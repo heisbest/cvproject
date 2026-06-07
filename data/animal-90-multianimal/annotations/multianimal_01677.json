@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01677.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "swan",
+      "bbox": [
+        0.0078125,
+        0.45416666666666666,
+        0.28125,
+        0.375
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.2671875,
+        0.475,
+        0.31875,
+        0.425
+      ]
+    }
+  ]
+}

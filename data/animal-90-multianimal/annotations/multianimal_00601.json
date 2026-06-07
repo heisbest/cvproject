@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00601.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "chimpanzee",
+      "bbox": [
+        0.3296875,
+        0.475,
+        0.3140625,
+        0.41875
+      ]
+    },
+    {
+      "class": "sparrow",
+      "bbox": [
+        0.4609375,
+        0.5083333333333333,
+        0.240625,
+        0.32083333333333336
+      ]
+    }
+  ]
+}

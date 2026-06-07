@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00764.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "butterfly",
+      "bbox": [
+        0.115625,
+        0.3625,
+        0.315625,
+        0.42083333333333334
+      ]
+    },
+    {
+      "class": "okapi",
+      "bbox": [
+        0.615625,
+        0.11041666666666666,
+        0.15,
+        0.2
+      ]
+    }
+  ]
+}

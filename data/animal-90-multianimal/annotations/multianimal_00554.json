@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_00554.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.321875,
+        0.10625,
+        0.328125,
+        0.4375
+      ]
+    },
+    {
+      "class": "crow",
+      "bbox": [
+        0.6453125,
+        0.0125,
+        0.2859375,
+        0.38125
+      ]
+    },
+    {
+      "class": "cockroach",
+      "bbox": [
+        0.0875,
+        0.0125,
+        0.2078125,
+        0.27708333333333335
+      ]
+    }
+  ]
+}

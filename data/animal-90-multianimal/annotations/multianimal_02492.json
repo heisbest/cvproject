@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02492.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "dragonfly",
+      "bbox": [
+        0.2671875,
+        0.12708333333333333,
+        0.184375,
+        0.24583333333333332
+      ]
+    },
+    {
+      "class": "possum",
+      "bbox": [
+        0.21875,
+        0.2875,
+        0.196875,
+        0.2625
+      ]
+    }
+  ]
+}

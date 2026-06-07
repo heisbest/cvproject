@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00154.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "seahorse",
+      "bbox": [
+        0.3421875,
+        0.175,
+        0.259375,
+        0.3458333333333333
+      ]
+    },
+    {
+      "class": "octopus",
+      "bbox": [
+        0.3296875,
+        0.0625,
+        0.1671875,
+        0.22291666666666668
+      ]
+    }
+  ]
+}

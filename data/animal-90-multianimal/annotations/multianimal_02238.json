@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02238.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "gorilla",
+      "bbox": [
+        0.8015625,
+        0.38333333333333336,
+        0.140625,
+        0.1875
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.2625,
+        0.3375,
+        0.1828125,
+        0.24375
+      ]
+    }
+  ]
+}

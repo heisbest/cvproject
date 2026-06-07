@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00535.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "horse",
+      "bbox": [
+        0.3984375,
+        0.575,
+        0.196875,
+        0.2625
+      ]
+    },
+    {
+      "class": "hare",
+      "bbox": [
+        0.478125,
+        0.5145833333333333,
+        0.146875,
+        0.19583333333333333
+      ]
+    }
+  ]
+}

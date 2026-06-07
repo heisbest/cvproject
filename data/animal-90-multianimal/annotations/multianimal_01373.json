@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01373.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "raccoon",
+      "bbox": [
+        0.453125,
+        0.4125,
+        0.2625,
+        0.35
+      ]
+    },
+    {
+      "class": "goldfish",
+      "bbox": [
+        0.0015625,
+        0.6604166666666667,
+        0.24375,
+        0.325
+      ]
+    }
+  ]
+}

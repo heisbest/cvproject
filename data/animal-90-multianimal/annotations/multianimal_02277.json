@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02277.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "mouse",
+      "bbox": [
+        0.1609375,
+        0.51875,
+        0.1671875,
+        0.22291666666666668
+      ]
+    },
+    {
+      "class": "orangutan",
+      "bbox": [
+        0.1078125,
+        0.17708333333333334,
+        0.225,
+        0.3
+      ]
+    }
+  ]
+}

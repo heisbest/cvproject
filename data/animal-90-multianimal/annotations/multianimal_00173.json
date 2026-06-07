@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00173.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hyena",
+      "bbox": [
+        0.4859375,
+        0.75,
+        0.15625,
+        0.20833333333333334
+      ]
+    },
+    {
+      "class": "jellyfish",
+      "bbox": [
+        0.5234375,
+        0.15625,
+        0.16875,
+        0.225
+      ]
+    }
+  ]
+}

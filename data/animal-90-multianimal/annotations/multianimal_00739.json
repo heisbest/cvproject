@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00739.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "squid",
+      "bbox": [
+        0.3546875,
+        0.22083333333333333,
+        0.20625,
+        0.275
+      ]
+    },
+    {
+      "class": "turtle",
+      "bbox": [
+        0.1578125,
+        0.21875,
+        0.2203125,
+        0.29375
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01499.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hornbill",
+      "bbox": [
+        0.3328125,
+        0.7125,
+        0.2,
+        0.26666666666666666
+      ]
+    },
+    {
+      "class": "bat",
+      "bbox": [
+        0.478125,
+        0.48541666666666666,
+        0.328125,
+        0.4375
+      ]
+    }
+  ]
+}

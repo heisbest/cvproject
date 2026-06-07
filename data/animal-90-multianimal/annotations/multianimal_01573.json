@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01573.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "oyster",
+      "bbox": [
+        0.3,
+        0.2875,
+        0.159375,
+        0.2125
+      ]
+    },
+    {
+      "class": "sparrow",
+      "bbox": [
+        0.5390625,
+        0.55,
+        0.3046875,
+        0.40625
+      ]
+    },
+    {
+      "class": "fly",
+      "bbox": [
+        0.2046875,
+        0.22083333333333333,
+        0.3375,
+        0.45
+      ]
+    }
+  ]
+}

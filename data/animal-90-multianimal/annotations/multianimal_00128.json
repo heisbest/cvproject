@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00128.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "mosquito",
+      "bbox": [
+        0.2453125,
+        0.27708333333333335,
+        0.26875,
+        0.35833333333333334
+      ]
+    },
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.078125,
+        0.5,
+        0.2328125,
+        0.3104166666666667
+      ]
+    }
+  ]
+}

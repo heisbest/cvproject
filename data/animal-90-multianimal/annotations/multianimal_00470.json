@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00470.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hippopotamus",
+      "bbox": [
+        0.046875,
+        0.5916666666666667,
+        0.1359375,
+        0.18125
+      ]
+    },
+    {
+      "class": "shark",
+      "bbox": [
+        0.5046875,
+        0.6229166666666667,
+        0.2203125,
+        0.29375
+      ]
+    }
+  ]
+}

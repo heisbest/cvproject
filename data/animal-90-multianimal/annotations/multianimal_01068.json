@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01068.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "deer",
+      "bbox": [
+        0.4015625,
+        0.20625,
+        0.3328125,
+        0.44375
+      ]
+    },
+    {
+      "class": "mosquito",
+      "bbox": [
+        0.3640625,
+        0.40625,
+        0.159375,
+        0.2125
+      ]
+    },
+    {
+      "class": "zebra",
+      "bbox": [
+        0.2375,
+        0.43125,
+        0.328125,
+        0.4375
+      ]
+    }
+  ]
+}

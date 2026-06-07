@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01623.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "reindeer",
+      "bbox": [
+        0.64375,
+        0.46875,
+        0.1453125,
+        0.19375
+      ]
+    },
+    {
+      "class": "rhinoceros",
+      "bbox": [
+        0.0125,
+        0.052083333333333336,
+        0.1734375,
+        0.23125
+      ]
+    }
+  ]
+}

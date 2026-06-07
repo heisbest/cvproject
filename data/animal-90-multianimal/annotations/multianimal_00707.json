@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_00707.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "goose",
+      "bbox": [
+        0.425,
+        0.18125,
+        0.234375,
+        0.3125
+      ]
+    },
+    {
+      "class": "gorilla",
+      "bbox": [
+        0.528125,
+        0.6083333333333333,
+        0.2125,
+        0.2833333333333333
+      ]
+    },
+    {
+      "class": "hummingbird",
+      "bbox": [
+        0.275,
+        0.0875,
+        0.2484375,
+        0.33125
+      ]
+    }
+  ]
+}

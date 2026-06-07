@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02037.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "rhinoceros",
+      "bbox": [
+        0.1,
+        0.075,
+        0.3390625,
+        0.45208333333333334
+      ]
+    },
+    {
+      "class": "jellyfish",
+      "bbox": [
+        0.5203125,
+        0.6166666666666667,
+        0.121875,
+        0.1625
+      ]
+    }
+  ]
+}

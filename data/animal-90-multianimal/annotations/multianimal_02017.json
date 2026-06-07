@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02017.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "butterfly",
+      "bbox": [
+        0.590625,
+        0.42083333333333334,
+        0.1875,
+        0.25
+      ]
+    },
+    {
+      "class": "pigeon",
+      "bbox": [
+        0.66875,
+        0.4375,
+        0.31875,
+        0.425
+      ]
+    }
+  ]
+}

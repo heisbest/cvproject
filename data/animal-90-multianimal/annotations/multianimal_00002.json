@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00002.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "porcupine",
+      "bbox": [
+        0.6625,
+        0.66875,
+        0.246875,
+        0.32916666666666666
+      ]
+    },
+    {
+      "class": "lobster",
+      "bbox": [
+        0.153125,
+        0.07291666666666667,
+        0.203125,
+        0.2708333333333333
+      ]
+    }
+  ]
+}

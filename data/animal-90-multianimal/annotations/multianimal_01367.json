@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01367.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "whale",
+      "bbox": [
+        0.515625,
+        0.625,
+        0.25625,
+        0.3416666666666667
+      ]
+    },
+    {
+      "class": "porcupine",
+      "bbox": [
+        0.46875,
+        0.5166666666666667,
+        0.3328125,
+        0.44375
+      ]
+    },
+    {
+      "class": "flamingo",
+      "bbox": [
+        0.221875,
+        0.6375,
+        0.24375,
+        0.325
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02371.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "bee",
+      "bbox": [
+        0.315625,
+        0.6166666666666667,
+        0.184375,
+        0.24583333333333332
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.246875,
+        0.027083333333333334,
+        0.121875,
+        0.1625
+      ]
+    }
+  ]
+}

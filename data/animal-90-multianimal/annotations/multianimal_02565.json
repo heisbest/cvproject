@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02565.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "sparrow",
+      "bbox": [
+        0.08125,
+        0.008333333333333333,
+        0.3234375,
+        0.43125
+      ]
+    },
+    {
+      "class": "crab",
+      "bbox": [
+        0.0671875,
+        0.01875,
+        0.1421875,
+        0.18958333333333333
+      ]
+    }
+  ]
+}

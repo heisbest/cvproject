@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00946.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "starfish",
+      "bbox": [
+        0.509375,
+        0.60625,
+        0.253125,
+        0.3375
+      ]
+    },
+    {
+      "class": "fly",
+      "bbox": [
+        0.234375,
+        0.020833333333333332,
+        0.25,
+        0.3333333333333333
+      ]
+    }
+  ]
+}

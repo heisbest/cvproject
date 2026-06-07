@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02072.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "sheep",
+      "bbox": [
+        0.3171875,
+        0.14375,
+        0.2484375,
+        0.33125
+      ]
+    },
+    {
+      "class": "possum",
+      "bbox": [
+        0.0828125,
+        0.5083333333333333,
+        0.325,
+        0.43333333333333335
+      ]
+    }
+  ]
+}

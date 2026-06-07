@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_00577.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "whale",
+      "bbox": [
+        0.2265625,
+        0.07291666666666667,
+        0.159375,
+        0.2125
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.721875,
+        0.44583333333333336,
+        0.1875,
+        0.25
+      ]
+    }
+  ]
+}

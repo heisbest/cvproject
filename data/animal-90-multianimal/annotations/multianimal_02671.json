@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_02671.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hummingbird",
+      "bbox": [
+        0.26875,
+        0.5541666666666667,
+        0.33125,
+        0.44166666666666665
+      ]
+    },
+    {
+      "class": "swan",
+      "bbox": [
+        0.671875,
+        0.5958333333333333,
+        0.2953125,
+        0.39375
+      ]
+    }
+  ]
+}

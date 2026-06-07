@@ -1,0 +1,24 @@
+{
+  "file_name": "multianimal_01034.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "hedgehog",
+      "bbox": [
+        0.00625,
+        0.45208333333333334,
+        0.3328125,
+        0.44375
+      ]
+    },
+    {
+      "class": "goose",
+      "bbox": [
+        0.2421875,
+        0.3125,
+        0.146875,
+        0.19583333333333333
+      ]
+    }
+  ]
+}

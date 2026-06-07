@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_01383.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "zebra",
+      "bbox": [
+        0.578125,
+        0.1375,
+        0.2390625,
+        0.31875
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.415625,
+        0.42083333333333334,
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "class": "pigeon",
+      "bbox": [
+        0.084375,
+        0.4479166666666667,
+        0.334375,
+        0.44583333333333336
+      ]
+    }
+  ]
+}

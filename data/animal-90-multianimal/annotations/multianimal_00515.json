@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_00515.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "goat",
+      "bbox": [
+        0.471875,
+        0.23541666666666666,
+        0.271875,
+        0.3625
+      ]
+    },
+    {
+      "class": "grasshopper",
+      "bbox": [
+        0.3671875,
+        0.33541666666666664,
+        0.24375,
+        0.325
+      ]
+    },
+    {
+      "class": "pelecaniformes",
+      "bbox": [
+        0.35,
+        0.53125,
+        0.1875,
+        0.25
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "file_name": "multianimal_00359.jpg",
+  "dataset": "animal-90-multianimal",
+  "objects": [
+    {
+      "class": "parrot",
+      "bbox": [
+        0.7265625,
+        0.49375,
+        0.125,
+        0.16666666666666666
+      ]
+    },
+    {
+      "class": "coyote",
+      "bbox": [
+        0.146875,
+        0.39375,
+        0.28125,
+        0.375
+      ]
+    },
+    {
+      "class": "jellyfish",
+      "bbox": [
+        0.6875,
+        0.075,
+        0.265625,
+        0.3541666666666667
+      ]
+    }
+  ]
+}
