@@ -8,7 +8,8 @@ Usage:
 """
 
 from __future__ import annotations
-
+import os
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0,1,2,3,4,5")
 import argparse
 import base64
 import io
@@ -201,7 +202,23 @@ def main():
     parser.add_argument("--data-path", default=None)
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=7860)
-    parser.add_argument("--no-locateanything", action="store_true")
+    parser.add_argument(
+        "--no-locateanything",
+        action="store_true",
+        help="Disable LocateAnything and use trained BboxLocalizer instead",
+    )
+    parser.add_argument(
+        "--use-trained-localizer",
+        action="store_true",
+        help="Allow fallback to trained localizer_best.pth when LocateAnything finds nothing",
+    )
+    parser.add_argument(
+        "--backbones",
+        nargs="*",
+        default=None,
+        choices=["resnet_cbam", "efficientnet_b3", "convnext_t"],
+        help="Classifier backbones for inference (default: all available)",
+    )
     args = parser.parse_args()
 
     if args.weights_dir:
@@ -215,9 +232,20 @@ def main():
         print(f"Warning: no trained classifier in {weights_dir}. Train first:")
         print(f"  python scripts/train.py --data-path <your-dataset>")
 
+    use_la = not args.no_locateanything
+    use_trained_loc = (not use_la) or args.use_trained_localizer
+    if use_la and not use_trained_loc:
+        print("Web demo localization: LocateAnything (multi-box, no trained localizer fallback)")
+    elif use_la:
+        print("Web demo localization: LocateAnything with trained localizer fallback")
+    else:
+        print("Web demo localization: trained BboxLocalizer (--no-locateanything)")
+
     pipeline = AnimalRecognitionPipeline(
         weights_dir,
-        use_locateanything=not args.no_locateanything,
+        use_locateanything=use_la,
+        use_trained_localizer=use_trained_loc,
+        classifier_backbones=tuple(args.backbones) if args.backbones else None,
     )
     app = create_app(pipeline)
     print(f"Weights: {weights_dir}")

@@ -4,17 +4,23 @@ multianimal: ./data/animal-90-multianimal
 occlusion: ./data/animal-90-occlusion
 output_dir: ./checkpoints
 
-# Training
+# Training (Animal-90 accuracy focus)
 batch_size: 32
 loc_epochs: 20
-cls_epochs: 25
+cls_epochs: 50
 loc_lr: 0.001
-cls_lr: 0.001
+cls_lr: 0.0003
+weight_decay: 0.0001
+label_smoothing: 0.1
+augment_level: strong
+unfreeze_epoch: 5
+# Skip localization when chasing Animal-90 cls accuracy: --no-loc
 
-# Dataset generation
-samples_per_class: 30
-canvas_width: 640
-canvas_height: 480
+# Localization (multi-animal)
+loc_data_paths:
+  - ./data/animal-90-multianimal
+  - ./data/serengeti-multianimal
+
 
 # Inference
 use_locateanything: true

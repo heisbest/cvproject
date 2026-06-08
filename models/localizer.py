@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional, Tuple
@@ -103,27 +105,90 @@ class LocateAnythingWrapper:
     """
     Wrapper for nvidia/LocateAnything-3B (preferred at inference).
     Falls back to trained BboxLocalizer when the model is unavailable.
-    Install: pip install locateanything-worker  (from NVlabs/Eagle repo)
+    Install: python scripts/install_locateanything.py
     """
+
+    @staticmethod
+    def _embodied_dir() -> Path:
+        return Path(__file__).resolve().parents[1] / "third_party" / "Eagle" / "Embodied"
+
+    @classmethod
+    def _ensure_import_path(cls) -> None:
+        embodied = cls._embodied_dir()
+        if embodied.is_dir():
+            path = str(embodied)
+            if path not in sys.path:
+                sys.path.insert(0, path)
 
     def __init__(self, model_id: str = "nvidia/LocateAnything-3B", device: str = "cuda"):
         self.device = device
         self.worker = None
+        self._ensure_import_path()
         self._load_worker(model_id)
+
+    @staticmethod
+    def _setup_hf_cache() -> Path:
+        root = Path(__file__).resolve().parents[1]
+        hf_home = root / ".cache" / "huggingface"
+        hf_home.mkdir(parents=True, exist_ok=True)
+        # Always prefer project-local cache (setdefault would keep empty ~/.cache).
+        os.environ["HF_HOME"] = str(hf_home)
+        os.environ["HUGGINGFACE_HUB_CACHE"] = str(hf_home / "hub")
+        os.environ["TRANSFORMERS_CACHE"] = str(hf_home / "hub")
+        return hf_home
+
+    @classmethod
+    def _resolve_model_path(cls, model_id: str) -> tuple[str, bool]:
+        hf_home = cls._setup_hf_cache()
+        repo_name = f"models--{model_id.replace('/', '--')}"
+        snapshots = hf_home / "hub" / repo_name / "snapshots"
+        if not snapshots.is_dir():
+            return model_id, False
+
+        for snap in sorted(snapshots.iterdir(), key=lambda p: p.stat().st_mtime, reverse=True):
+            if (snap / "tokenizer_config.json").exists() and (snap / "config.json").exists():
+                return str(snap.resolve()), True
+        return model_id, False
 
     def _load_worker(self, model_id: str) -> None:
         try:
             from locateanything_worker import LocateAnythingWorker
 
-            self.worker = LocateAnythingWorker(model_id)
+            model_path, offline = self._resolve_model_path(model_id)
+            if offline:
+                os.environ["HF_HUB_OFFLINE"] = "1"
+                print(f"LocateAnything using local cache: {model_path}")
+            else:
+                print(
+                    "LocateAnything local cache not found; will download from HuggingFace.\n"
+                    "  Run: python scripts/install_locateanything.py\n"
+                    "  Or set proxy: export http_proxy=https_proxy=http://127.0.0.1:7893"
+                )
+
+            self.worker = LocateAnythingWorker(
+                model_path,
+                device=self.device,
+                local_files_only=offline,
+            )
             print(f"LocateAnything loaded: {model_id}")
-        except ImportError:
+        except ImportError as exc:
             print(
-                "LocateAnything not installed. Use BboxLocalizer or install from "
-                "https://github.com/NVlabs/Eagle (Embodied/locateanything_worker.py)"
+                "LocateAnything not installed in this Python environment.\n"
+                f"  Import error: {exc}\n"
+                "  Fix (run inside the same conda env as web_demo, e.g. sam3):\n"
+                "    python scripts/install_locateanything.py\n"
+                "  Installs Eagle under ./third_party/Eagle and weights under ./.cache/huggingface"
             )
         except Exception as exc:
-            print(f"LocateAnything load failed: {exc}")
+            print(f"LocateAnything load failed: {type(exc).__name__}: {exc}")
+
+    @staticmethod
+    def _box_to_xyxy(box) -> tuple[float, float, float, float]:
+        """Accept LocateAnything parse_boxes output (dict or 4-tuple)."""
+        if isinstance(box, dict):
+            return float(box["x1"]), float(box["y1"]), float(box["x2"]), float(box["y2"])
+        x1, y1, x2, y2 = box
+        return float(x1), float(y1), float(x2), float(y2)
 
     @staticmethod
     def _xyxy_to_xywh(x1: float, y1: float, x2: float, y2: float, w: int, h: int) -> Detection:
@@ -157,7 +222,8 @@ class LocateAnythingWrapper:
             return []
 
         detections = []
-        for i, (x1, y1, x2, y2) in enumerate(boxes):
+        for i, box in enumerate(boxes):
+            x1, y1, x2, y2 = self._box_to_xyxy(box)
             cat = categories[i % len(categories)] if categories else "animal"
             cid = class_to_idx.get(cat, -1) if class_to_idx else -1
             det = self._xyxy_to_xywh(x1, y1, x2, y2, w, h)
@@ -180,7 +246,27 @@ class LocateAnythingWrapper:
             print(f"LocateAnything ground error: {exc}")
             return []
 
-        return [self._xyxy_to_xywh(x1, y1, x2, y2, w, h) for x1, y1, x2, y2 in boxes]
+        return [
+            self._xyxy_to_xywh(*self._box_to_xyxy(box), w, h)
+            for box in boxes
+        ]
+
+    def detect_animals(
+        self,
+        image: Image.Image,
+        categories: List[str],
+        class_to_idx: Optional[dict] = None,
+        phrase: str = "animal",
+    ) -> List[Detection]:
+        """Multi-box animal localization: phrase grounding first, then category detect."""
+        if self.worker is None:
+            return []
+
+        dets = self.ground_phrase(image, phrase)
+        if dets:
+            return dets
+
+        return self.detect(image, categories, class_to_idx)
 
 
 def save_localizer(path: Path, model: BboxLocalizer, meta: dict) -> None:

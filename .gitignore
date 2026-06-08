@@ -1,0 +1,30 @@
+# Model weight binaries and caches
+*.pth
+*.pt
+*.ckpt
+.cache/
+
+# Third-party clones (run scripts/install_locateanything.py)
+third_party/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+.eggs/
+
+# Logs and local runs
+logs/
+
+# Dataset symlinks / large image dirs (see DATASETS.md)
+data/animal-90
+data/serengeti-multianimal/images/
+data/serengeti-multianimal/_cache/
+data/serengeti-multianimal/SnapshotSerengetiBboxes_20190903.json
+
+# IDE
+.idea/
+.vscode/
+*.swp

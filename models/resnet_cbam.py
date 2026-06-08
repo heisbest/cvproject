@@ -37,9 +37,13 @@ class ResNet50CBAM(ResNet):
             from torchvision.models import ResNet50_Weights, resnet50
 
             state = resnet50(weights=ResNet50_Weights.IMAGENET1K_V1).state_dict()
+            if num_classes != 1000:
+                state = {k: v for k, v in state.items() if not k.startswith("fc.")}
             missing, unexpected = self.load_state_dict(state, strict=False)
             cbam_keys = [k for k in missing if "cbam" in k]
             other_missing = [k for k in missing if "cbam" not in k]
+            if num_classes != 1000:
+                other_missing = [k for k in other_missing if not k.startswith("fc.")]
             if other_missing:
                 print(f"Warning: non-CBAM keys not loaded: {other_missing[:5]}...")
 

@@ -1,0 +1,13 @@
+{
+  "data_path": "/home/public/yuxinyang/cvproject/project1/data/animals/animals",
+  "dataset_type": "animal90",
+  "loc_epochs": 20,
+  "cls_epochs": 36,
+  "resume": true,
+  "split_seed": 42,
+  "loc_split_seed": null,
+  "backbones": [
+    "efficientnet_b3"
+  ],
+  "val_ratio": 0.15
+}

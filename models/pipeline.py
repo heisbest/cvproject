@@ -1,5 +1,5 @@
 """
-End-to-end inference: localize (xywh) -> mask -> classify (ResNet50+CBAM).
+End-to-end inference: localize (xywh) -> mask -> classify (multi-backbone ensemble).
 """
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from PIL import Image, ImageDraw
 from torchvision import transforms
 
-from . import apply_mask_to_image, build_classifier, load_localizer
+from . import apply_mask_to_image, load_ensemble_from_dir
 from .localizer import Detection, LocateAnythingWrapper
 
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
@@ -45,38 +45,69 @@ class AnimalRecognitionPipeline:
         weights_dir: str | Path,
         device: str | None = None,
         use_locateanything: bool = True,
+        use_trained_localizer: bool = True,
+        classifier_backbones: tuple[str, ...] | None = None,
     ):
         self.device = torch.device(device or ("cuda" if torch.cuda.is_available() else "cpu"))
         ckpt_dir = Path(weights_dir)
+        self.classifier_backbones = classifier_backbones
 
         with open(ckpt_dir / "class_names.json", encoding="utf-8") as f:
             self.class_names: List[str] = json.load(f)
         self.class_to_idx = {c: i for i, c in enumerate(self.class_names)}
 
-        cls_ckpt = torch.load(
-            ckpt_dir / "classifier_cbam_best.pth",
-            map_location=self.device,
-            weights_only=False,
-        )
-        self.classifier = build_classifier(len(self.class_names), pretrained=False)
-        self.classifier.load_state_dict(cls_ckpt["state_dict"])
-        self.classifier.to(self.device).eval()
+        from .ensemble import CLASSIFIER_BACKBONES
 
+        backbones = classifier_backbones or CLASSIFIER_BACKBONES
+        self.ensemble = load_ensemble_from_dir(
+            ckpt_dir,
+            len(self.class_names),
+            device=self.device,
+            backbones=backbones,
+        )
+        if self.ensemble is None:
+            from . import build_classifier
+
+            cls_ckpt = torch.load(
+                ckpt_dir / "classifier_cbam_best.pth",
+                map_location=self.device,
+                weights_only=False,
+            )
+            self.classifier = build_classifier(len(self.class_names), pretrained=False)
+            self.classifier.load_state_dict(cls_ckpt["state_dict"])
+            self.classifier.to(self.device).eval()
+        else:
+            self.classifier = None
+
+        self.use_trained_localizer = use_trained_localizer
         self.localizer = None
         loc_path = ckpt_dir / "localizer_best.pth"
-        if loc_path.exists():
+        if use_trained_localizer and loc_path.exists():
+            from . import load_localizer
+
             self.localizer, _ = load_localizer(loc_path, device=str(self.device))
             self.localizer.eval()
 
         self.locateanything = LocateAnythingWrapper() if use_locateanything else None
+        if use_locateanything:
+            if self.locateanything and self.locateanything.worker is not None:
+                print("[Pipeline] Localization: LocateAnything (multi-box)")
+            else:
+                print("[Pipeline] LocateAnything unavailable; install from NVlabs/Eagle Embodied/")
+        elif self.localizer is not None:
+            print("[Pipeline] Localization: trained BboxLocalizer (single-box)")
 
     def localize(self, image: Image.Image) -> List[Detection]:
-        categories = self.class_names[: min(20, len(self.class_names))]
+        categories = self.class_names
 
         if self.locateanything and self.locateanything.worker is not None:
-            dets = self.locateanything.detect(image, categories, self.class_to_idx)
+            dets = self.locateanything.detect_animals(
+                image, categories, self.class_to_idx, phrase="animal"
+            )
             if dets:
                 return dets
+            if not self.use_trained_localizer:
+                return [Detection(x=0.05, y=0.05, w=0.9, h=0.9, confidence=0.5)]
 
         if self.localizer is not None:
             tensor = preprocess(image).to(self.device)
@@ -96,8 +127,12 @@ class AnimalRecognitionPipeline:
         masked = apply_mask_to_image(tensor, bbox)
 
         with torch.no_grad():
-            logits = self.classifier(masked)
-            probs = F.softmax(logits, dim=1)[0]
+            if self.ensemble is not None:
+                details = self.ensemble.forward_with_details(masked)
+                probs = F.softmax(details["logits"], dim=1)[0]
+            else:
+                logits = self.classifier(masked)
+                probs = F.softmax(logits, dim=1)[0]
 
         idx = probs.argmax().item()
         prob_dict = {self.class_names[i]: probs[i].item() for i in range(len(self.class_names))}
